@@ -1,8 +1,8 @@
 # binder-cmq
-## cmq-binder group和partition设计方案
-架构图如下：
 
- ![image](https://github.com/zhangzerui20/binder-cmq/blob/master/doc/images/kkkkk.png)
+binder-cmq是腾讯消息队列和spring-cloud-stream的整合。
+
+ ![image](https://github.com/zhangzerui20/binder-cmq/blob/master/doc/images/binder-cmq.png)
 
 消费者应用启动的时候，会在cmq上创建一个topic，topic的名字是，input上注解的destination。接着会创建一个队列，队列的名字包含三段，格式如下：
 ```
