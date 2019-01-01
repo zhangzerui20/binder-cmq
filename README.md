@@ -1,7 +1,7 @@
 # binder-cmq
 ## cmq-binder group和partition设计方案
 架构图如下：
-![ce034cf8a28b9f50196464d3488756b6.png](evernotecid://53A52B31-21DC-48D5-B982-77D4735BA458/appyinxiangcom/17142841/ENResource/p211)
+ ![image](https://github.com/zhangzerui20/binder-cmq/doc/images/kkkkk.png)
 消费者应用启动的时候，会在cmq上创建一个topic，topic的名字是，input上注解的destination。接着会创建一个队列，队列的名字包含三段，格式如下：
 ```
 destination_group_partition
