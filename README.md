@@ -35,7 +35,7 @@ cmq有binding key和routing key的概念。借助这个实现了partition功能�
 概括来说，一个consumer一个queue，通过routing key将消息发送给不同的consumer。
 
 ### 使用示例：
-#### 配置示例：
+
 配置示例：
 ```
 spring:
@@ -59,8 +59,8 @@ spring:
             consumer:
               pollingWaitSeconds: 8
         binder:
-          secretId: AKIDvlSyJT3SM7g4HKFwzslXK0VqzxkNMGbq
-          secretKey: GMH2bzCF8qNju1znQtBIE0b1JRO9oJfr
+          secretId: *****
+          secretKey: *****
           endpoint: https://cmq-queue-gz.api.qcloud.com
 ```
 
